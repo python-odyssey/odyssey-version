@@ -1,2 +1,19 @@
-# Auto detect text files and perform LF normalization
-* text eol=LF
+# All text files we care about should be LF
+.gitattributes    text    eol=lf
+.gitignore        text    eol=lf
+poetry.lock       text    eol=lf
+
+*.toml            text    eol=lf
+*.json            text    eol=lf
+*.yml             text    eol=lf
+
+*.py              text    eol=lf
+*.js              text    eol=lf
+*.ts              text    eol=lf
+*.rs              text    eol=lf
+
+*.ps1             text    eol=lf
+*.sh              text    eol=lf
+
+# Batch files only ever run with CRLF
+*.bat             text    eol=crlf
