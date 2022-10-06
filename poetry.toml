@@ -1,0 +1,9 @@
+[virtualenvs]
+create = true
+in-project = true
+
+[virtualenvs.options]
+always-copy = true
+no-pip = false
+no-setuptools = false
+system-site-packages = false
