@@ -9,6 +9,7 @@ packages = [{include = "odyssey_version"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+semantic-version = "2.10.0"
 
 
 [tool.poetry.group.dev.dependencies]
