@@ -48,7 +48,7 @@ jobs:
             Add-Content $env:GITHUB_PATH "~/.local/share/pypoetry/venv/bin"
           }
           elseif ($IsWindows) {
-            Add-Content $env:GITHUB_PATH "%APPDATA%\Python\Scripts"
+            Add-Content $env:GITHUB_PATH "$Env:APPDATA\Python\Scripts"
           }
 
       # Creates a virtual environment and installs packages using poetry
