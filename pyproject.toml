@@ -5,7 +5,6 @@ description = "Handles version compatibility between PEP440 and SemVer 2.0"
 authors = ["Justin Sharma <justin.elite@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "odyssey_version"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
