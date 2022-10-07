@@ -35,5 +35,14 @@ jobs:
       # Runs a single command using the pwsh shell
       - name: Install Poetry
         shell: pwsh
-        run: Get-Command python
+        run: (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python - --version 1.2.1
 
+      # Creates a virtual environment and installs packages using poetry
+      - name: Install Python Packages
+        shell: pwsh
+        run: poetry install
+
+      # Runs pytest using poetry inside virtual environment
+      - name: Run Pytest
+        shell: pwsh
+        run: poetry run pytest
