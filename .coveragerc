@@ -1,0 +1,6 @@
+[report]
+show_missing = True
+
+[html]
+skip_covered = True
+skip_empty = True
